@@ -24,13 +24,12 @@ body {
 }
 
 .title-animate {
-  animation: title-animate 0.8s linear both
+  animation: title-animate 1s linear both
 }
 
 @keyframes title-animate {
   0% {
-    letter-spacing: -.4em;
-    transform: translateZ(-700px) translateY(-100px);
+    letter-spacing: -.2em;
     opacity: 0
   }
 
@@ -39,7 +38,6 @@ body {
   }
 
   100% {
-    transform: translateZ(0) translateY(0);
     opacity: 1
   }
 }
