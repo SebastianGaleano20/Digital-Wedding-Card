@@ -1,5 +1,7 @@
+import Index from "../components/ui/Index";
+
 export default function Home() {
   return (
-   <h1>hola</h1>
+   <Index />
   );
 }
