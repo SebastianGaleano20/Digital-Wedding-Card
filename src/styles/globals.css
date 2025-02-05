@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-inter: "Inter", sans-serif;
+  --font-dancingScript: "Dancing Script", cursive
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,11 +29,16 @@ body {
   animation: title-animate 1s linear both
 }
 
-.title-gold{
-  color: rgb(255,215,0);
+.cursive {
+  font-family: var(--font-dancing-script);
+}
+
+.title-gold {
+  color: rgb(255, 215, 0);
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
   border: 1px
 }
+
 @keyframes title-animate {
   0% {
     letter-spacing: -.2em;
