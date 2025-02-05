@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
-import { inter } from '../fonts/fonts';
+import { inter, mea_culpa } from '../fonts/fonts';
+import type React from "react"
 
 export const metadata: Metadata = {
   title: 'Boda Lu y Sebas',
@@ -14,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${mea_culpa.variable}`}>{children}</body>
     </html>
   );
 }

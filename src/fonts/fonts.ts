@@ -1,11 +1,14 @@
-import { Inter, Dancing_Script } from 'next/font/google';
+import { Inter, Mea_Culpa } from 'next/font/google';
 
 export const inter = Inter({
-    subsets: ["latin"],
-    display: "swap",
-  })
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
 
-export const dancingScript = Dancing_Script({
-    subsets: ["latin"],
-    display: "swap",
-  })
+export const mea_culpa = Mea_Culpa({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mea-culpa",
+})
