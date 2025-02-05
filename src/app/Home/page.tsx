@@ -1,5 +1,9 @@
+import AboutUs from "@/src/components/ui/AboutUs";
+
 export default function Home() {
     return (
-        <h1>Hola</h1>
+       <section className="bg-white h-screen">
+        <AboutUs />
+       </section>
     );
   }
