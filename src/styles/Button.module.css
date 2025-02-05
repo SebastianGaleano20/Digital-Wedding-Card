@@ -1,13 +1,16 @@
-.rotating {
-    animation: rotate-center 0.8s;
+.expand {
+  animation: expand 0.8s linear both
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+    filter: blur(.01px);
   }
-  
-  @keyframes rotate-center {
-    0% {
-      transform: rotate(0);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }  
+
+  100% {
+    transform: scale(2);
+    filter: blur(12px);
+    opacity: 0
+  }
+}

@@ -1,9 +1,8 @@
-'use client'
 import { Button } from "./Button"
 
 export default function Index() {
     return (
-        <section className="min-h-screen bg-gray-100 p-8">
+        <section className="min-h-screen bg-gray-100 p-4">
             <h1 className="title-animate title-elegant text-6xl font-bold text-center text-gray-600 m-6">Nos casamos ♥</h1>
             <section className="grid gap-8">
                 <section
@@ -16,8 +15,9 @@ export default function Index() {
                     <h2 className="title-animate title-elegant text-black text-4xl font-bold text-center mb-2">Luciana & Sebastian</h2>
                 </section>
             </section>
-            <section className="flex justify-center m-4">
-                <Button />
+                <h3 className="text-black text-2xl font-bold title-elegant text-center mt-4">Ingresar</h3>
+            <section className="flex justify-center items-center flex-col">
+                <Button href="/Home" />
             </section>
         </section>
     )

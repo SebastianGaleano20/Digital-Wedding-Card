@@ -1,35 +1,32 @@
-import { useState } from "react"
-import styles from "../../styles/Button.module.css"
-import Image from "next/image"
+'use client'
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import styles from "../../styles/Button.module.css";
+import Image from "next/image";
 
 interface ButtonProps {
-    onClick?: () => void
+    href?: string;
 }
 
-export function Button({ onClick }: ButtonProps) {
-    const [isRotating, setIsRotating] = useState(false)
+export function Button({ href }: ButtonProps) {
+    const [isExpand, setIsExpand] = useState(false);
+    const router = useRouter();
 
     const handleClick = () => {
-        setIsRotating(true)
-        // Llamar a la función onClick proporcionada (si existe)
-        if (onClick) {
-            onClick()
-        }
-        // Desactivar la animación después de que termine
+        setIsExpand(true);
+
+        // Esperar a que la animación termine antes de redirigir
         setTimeout(() => {
-            setIsRotating(false)
-        }, 800) // 800ms es la duración de la animación
-    }
+            setIsExpand(false);
+            if (href) {
+                router.push(href); // Redirecciona después de 800 ms
+            }
+        }, 800); // Duración de la animación
+    };
 
     return (
-        <button className={`${isRotating ? styles.rotating : ""}`} onClick={handleClick}>
-            <Image
-                src={"/logo.png"}
-                width={130}
-                height={130}
-                alt="logo"
-            />
+        <button className={`${isExpand ? styles.expand : ""}`} onClick={handleClick}>
+            <Image src="/logo.png" width={130} height={130} alt="logo" />
         </button>
-    )
+    );
 }
-
