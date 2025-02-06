@@ -43,10 +43,10 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
       <section className="flex flex-wrap justify-center items-center gap-4">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <section key={unit} className="text-center">
-            <section className="bg-sky-200 rounded-lg p-4 w-18 h-18 flex items-center justify-center">
-              <span className="text-4xl font-bold">{formatTime(value as number)}</span>
+            <section className="bg-blue-500 rounded-lg p-4 w-18 h-18 flex items-center justify-center">
+              <span className="text-4xl font-bold elegant">{formatTime(value as number)}</span>
             </section>
-            <p className="mt-2 text-lg capitalize">{unit}</p>
+            <p className="mt-2 text-2xl font-bold capitalize elegant">{unit}</p>
           </section>
         ))}
       </section>
