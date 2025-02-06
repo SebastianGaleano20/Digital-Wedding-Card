@@ -21,7 +21,7 @@ export function Button({ href }: ButtonProps) {
             if (href) {
                 router.push(href); // Redirecciona después de 800 ms
             }
-        }, 800); // Duración de la animación
+        }, 600); // Duración de la animación
     };
 
     return (

@@ -1,5 +1,5 @@
 .expand {
-  animation: expand 0.8s linear both
+  animation: expand 0.6s linear both
 }
 
 @keyframes expand {
