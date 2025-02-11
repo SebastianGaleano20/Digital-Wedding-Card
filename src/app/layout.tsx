@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
-import { inter, mea_culpa } from '../fonts/fonts';
+import { mea_culpa, outfit } from '../fonts/fonts';
 import type React from "react"
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${mea_culpa.variable}`}>{children}</body>
+      <body className={`${outfit.variable} ${mea_culpa.variable}`}>{children}</body>
     </html>
   );
 }

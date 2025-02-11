@@ -14,10 +14,10 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
 
     if (difference > 0) {
       timeLeft = {
-        dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutos: Math.floor((difference / 1000 / 60) % 60),
-        segundos: Math.floor((difference / 1000) % 60),
+        DIAS: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        HORAS: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        MIN: Math.floor((difference / 1000 / 60) % 60),
+        SEG: Math.floor((difference / 1000) % 60),
       }
     }
 
@@ -39,14 +39,14 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
   }
 
   return (
-    <section className="flex flex-col items-center justify-center space-y-4 p-4">
-      <section className="flex flex-wrap justify-center items-center gap-4">
+    <section className="m-4 flex flex-col items-center justify-center space-y-4">
+      <section className="flex flex-wrap justify-center items-center gap-2">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <section key={unit} className="text-center">
-            <section className="bg-blue-500 rounded-lg p-4 w-18 h-18 flex items-center justify-center">
-              <span className="text-4xl font-bold elegant">{formatTime(value as number)}</span>
+            <section className="bg-sky-200 rounded-full text-center p-2 w-16 h-16 flex items-center justify-center">
+              <span className="text-lg font-bold text-gray-800">{formatTime(value as number)}</span>
             </section>
-            <p className="mt-2 text-2xl font-bold capitalize elegant">{unit}</p>
+            <p className="mt-2 text-lg font-bold text-gray-600">{unit}</p>
           </section>
         ))}
       </section>

@@ -6,9 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --font-inter: "Inter", sans-serif;
-  --font-dancing-script: "Dancing Script", cursive;
   --font-mea-culpa: "Mea Culpa", cursive;
+  --font-outfit: "Outfit", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +29,7 @@ body {
 .title-animate {
   animation: title-animate 1s linear both
 }
+
 
 .elegant {
   font-family: var(--font-mea-culpa);
