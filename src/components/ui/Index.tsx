@@ -10,7 +10,7 @@ export default function Index() {
                     backgroundAttachment: "fixed",
                     backgroundSize: "cover",
                 }}
-        >  *
+        >
             <section>
                 <h1 className="title-animate p-2 elegant text-6xl font-bold text-center text-black mt-2">Nos casamos ♥</h1>
                 <section className="grid gap-6 bg-gray-100">

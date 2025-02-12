@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
+import styles from "@/src/styles/Heart.module.css"
 
 interface ChronometerProp {
   ObjetiveDate?: string // Formato: "YYYY-MM-DD"
@@ -39,12 +40,13 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
   }
 
   return (
-    <section className="m-4 flex flex-col items-center justify-center space-y-4">
-      <section className="flex flex-wrap justify-center items-center gap-2">
+    <section className="p-4">
+      <h2 className="text-lg font-bold text-gray-600 mb-4">¡Cuenta regresiva!😍💍</h2>
+      <section className="grid grid-cols-4 gap-4 md:grid-cols-4 place-items-center">
         {Object.entries(timeLeft).map(([unit, value]) => (
-          <section key={unit} className="text-center">
-            <section className="bg-sky-200 rounded-full text-center p-2 w-16 h-16 flex items-center justify-center">
-              <span className="text-lg font-bold text-gray-800">{formatTime(value as number)}</span>
+          <section key={unit} className="text-center m-4">
+            <section className={`${styles.heart} text-center`}>
+              <span className={`${styles.content} text-lg font-bold text-gray-800 pb-4`}>{formatTime(value as number)}</span>
             </section>
             <p className="mt-2 text-lg font-bold text-gray-600">{unit}</p>
           </section>
