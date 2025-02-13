@@ -6,7 +6,7 @@ import styles from "@/src/styles/Heart.module.css"
 import animation from '@/src/styles/Animation.module.css'
 
 interface ChronometerProp {
-  ObjetiveDate?: string // Formato: "YYYY-MM-DD"
+  ObjetiveDate?: string
 }
 
 const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" }) => {
@@ -34,7 +34,7 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [ObjetiveDate, calculateTimeLeft]) // Added calculateTimeLeft to dependencies
+  }, [ObjetiveDate, calculateTimeLeft])
 
   const formatTime = (value: number) => {
     return value.toString().padStart(2, "0")
@@ -47,7 +47,7 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
         {Object.entries(timeLeft).map(([unit, value]) => (
           <section key={unit} className="text-center m-4">
             <section className={`${styles.heart} text-center`}>
-              <span className={`${styles.content} text-lg font-bold text-gray-800 pb-4`}>{formatTime(value as number)}</span>
+              <p className={`${styles.content} text-lg font-bold text-black pb-4`}>{formatTime(value as number)}</p>
             </section>
             <p className="mt-2 text-lg font-bold text-gray-600">{unit}</p>
           </section>
