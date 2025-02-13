@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState, useEffect } from "react"
 import styles from "@/src/styles/Heart.module.css"
+import animation from '@/src/styles/Animation.module.css'
 
 interface ChronometerProp {
   ObjetiveDate?: string // Formato: "YYYY-MM-DD"
@@ -40,8 +41,9 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
   }
 
   return (
-    <section className="p-4 text-center">
-      <h2 className="text-lg font-bold text-gray-600 mb-4">¡Cuenta regresiva!😍💍</h2>
+    <section className="text-center">
+      <h2 className={`text-center text-2xl font-bold text-gray-800 ${animation.scaleUp}`}>20 Diciembre 2025</h2>
+      <p className={`text-md font-bold text-gray-600 m-3 ${animation.scaleUp}`}>¡Cuenta regresiva!😍💍</p>
       <section className="grid grid-cols-4 gap-4 md:grid-cols-4 place-items-center">
         {Object.entries(timeLeft).map(([unit, value]) => (
           <section key={unit} className="text-center m-4">

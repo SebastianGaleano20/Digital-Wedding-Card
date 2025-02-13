@@ -1,3 +1,4 @@
+import AboutUs from "@/src/components/sections/AboutUs";
 import Chronometer from "@/src/components/ui/Chronometer";
 
 export default function Home() {
@@ -5,7 +6,8 @@ export default function Home() {
     <section
       className="m-h-screen bg-white"
     >
-      <section className="p-4">
+      <section>
+        <AboutUs />
         <Chronometer />
       </section>
     </section>
