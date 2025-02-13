@@ -3,7 +3,7 @@ export default function AboutUs() {
     return (
         <section>
             <section
-                className="h-screen bg-cover bg-center bg-no-repeat relative flex flex-col gap-4 items-center justify-center"
+                className="h-96 bg-cover bg-center bg-no-repeat relative flex flex-col gap-4 items-center justify-center"
                 style={{
                     backgroundImage: "url('https://multer-upload-api.s3.us-east-2.amazonaws.com/images/DigitalCard/Luz')",
                 }}

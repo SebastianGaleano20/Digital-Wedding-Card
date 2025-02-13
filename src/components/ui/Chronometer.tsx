@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import styles from "@/src/styles/Heart.module.css"
 import animation from '@/src/styles/Animation.module.css'
 
@@ -10,7 +10,7 @@ interface ChronometerProp {
 }
 
 const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = +new Date(ObjetiveDate) - +new Date()
     let timeLeft = {}
 
@@ -24,7 +24,7 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
     }
 
     return timeLeft
-  }
+  }, [ObjetiveDate])
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
@@ -34,7 +34,7 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [ObjetiveDate, calculateTimeLeft])
+  }, [calculateTimeLeft])
 
   const formatTime = (value: number) => {
     return value.toString().padStart(2, "0")
