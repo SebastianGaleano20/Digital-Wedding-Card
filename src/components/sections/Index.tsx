@@ -13,7 +13,7 @@ export default function Index() {
                 }}
         >
             <section>
-                <h1 className={`${animation.title} p-2 elegant text-6xl font-bold text-center text-black mt-2`}>Nos casamos ♥</h1>
+                <h1 className={`${animation.title} p-2 elegant text-6xl font-bold text-center text-black m-2`}>Nos casamos ♥</h1>
                 <section className="grid gap-6 bg-gray-100">
                     <section
                         className="p-4 rounded-lg shadow-lg bg-white border-2 border-yellow-500"

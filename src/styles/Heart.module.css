@@ -35,6 +35,6 @@
     transform: rotate(45deg);
     z-index: 1;
     position: relative;
-    color: white;
+    color: #111b2c;
     font-size: clamp(1.5rem, 3vw, 3rem);
 }

@@ -45,9 +45,9 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
       <p className={`text-md font-bold text-gray-600 m-3 ${animation.scaleUp}`}>¡Cuenta regresiva!😍💍</p>
       <section className="grid grid-cols-4 gap-4 md:grid-cols-4 place-items-center">
         {Object.entries(timeLeft).map(([unit, value]) => (
-          <section key={unit} className="text-center m-4">
+          <section key={unit} className="m-4">
             <section className={`${styles.heart} text-center`}>
-              <p className={`${styles.content} text-lg font-bold text-black pb-4`}>{formatTime(value as number)}</p>
+              <p className={`${styles.content} text-lg font-bold pb-4`}>{formatTime(value as number)}</p>
             </section>
             <p className="mt-2 text-lg font-bold text-gray-600">{unit}</p>
           </section>
