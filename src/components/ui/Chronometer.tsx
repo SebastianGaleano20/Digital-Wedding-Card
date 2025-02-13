@@ -40,7 +40,7 @@ const Chronometer: React.FC<ChronometerProp> = ({ ObjetiveDate = "2025-12-20" })
   }
 
   return (
-    <section className="p-4">
+    <section className="p-4 text-center">
       <h2 className="text-lg font-bold text-gray-600 mb-4">¡Cuenta regresiva!😍💍</h2>
       <section className="grid grid-cols-4 gap-4 md:grid-cols-4 place-items-center">
         {Object.entries(timeLeft).map(([unit, value]) => (

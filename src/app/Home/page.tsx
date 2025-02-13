@@ -5,7 +5,7 @@ export default function Home() {
     <section
       className="m-h-screen bg-white"
     >
-      <section className="text-center p-4">
+      <section className="p-4">
         <Chronometer />
       </section>
     </section>

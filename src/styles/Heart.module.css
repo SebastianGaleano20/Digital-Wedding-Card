@@ -2,7 +2,7 @@
     /*clamp para diseño responsivo sin media querie */
     width: clamp(2.5rem, 8vw, 4rem);
     height: clamp(2.5rem, 8vw, 4rem);
-    background-color: red;
+    background-color: #88aff8;
     position: relative;
     transform: rotate(-45deg);
     display: flex;
@@ -16,7 +16,7 @@
     content: "";
     width: clamp(2.5rem, 8vw, 4rem);
     height: clamp(2.5rem, 8vw, 4rem);
-    background-color: rgb(221, 82, 82);
+    background-color: #88aff8;
     border-radius: 50%;
     position: absolute;
 }
