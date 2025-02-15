@@ -9,7 +9,7 @@ export default function Home() {
     >
       <section>
         <AboutUs />
-        {/* <Chronometer /> */}
+        <Chronometer />
         <Itinerary />
       </section>
     </section>

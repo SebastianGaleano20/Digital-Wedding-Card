@@ -29,6 +29,15 @@ body {
   font-family: var(--font-mea-culpa);
 }
 
+.title-gradient {
+  background: linear-gradient(to right, #0f0f0f, #2b6cb0);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 .title2xl {
   font-size:  1.5rem;
   text-align: center;
