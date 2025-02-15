@@ -1,4 +1,5 @@
 import AboutUs from "@/src/components/sections/AboutUs";
+import Itinerary from "@/src/components/sections/Itinerary";
 import Chronometer from "@/src/components/ui/Chronometer";
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
     >
       <section>
         <AboutUs />
-        <Chronometer />
+        {/* <Chronometer /> */}
+        <Itinerary />
       </section>
     </section>
   );

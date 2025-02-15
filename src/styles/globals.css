@@ -28,3 +28,18 @@ body {
 .elegant {
   font-family: var(--font-mea-culpa);
 }
+
+.title2xl {
+  font-size:  1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.titleXl {
+  font-size:  1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2d3748;
+  margin: 1em;
+}
