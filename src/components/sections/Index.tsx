@@ -4,7 +4,7 @@ import animation from '@/src/styles/Animation.module.css'
 export default function Index() {
     return (
         <section
-            className="p-4 min-h-screen"
+            className="p-2 min-h-screen"
             style={
                 {
                     backgroundImage: "url('https://multer-upload-api.s3.us-east-2.amazonaws.com/images/DigitalCard/Font3')",
@@ -12,8 +12,11 @@ export default function Index() {
                     backgroundSize: "cover",
                 }}
         >
+            <section className="flex flex-col items-end mt-4">
+            <h2 className="title-gradient text-4xl elegant">Nuestra boda</h2>
+            </section>
             <section>
-                <section className="grid">
+                <section className="grid mt-4">
                     <section
                         className="p-4 rounded-lg shadow-lg bg-white border-2 border-yellow-500"
                     >
