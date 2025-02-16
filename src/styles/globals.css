@@ -38,17 +38,12 @@ body {
 }
 
 
-.title2xl {
-  font-size:  1.5rem;
-  text-align: center;
+.p-gray {
   font-weight: bold;
   color: #2d3748;
 }
 
-.titleXl {
-  font-size:  1rem;
-  text-align: center;
-  font-weight: bold;
-  color: #2d3748;
-  margin: 1em;
+.box {
+  border-top: 2px solid #c7c97f;
+  border-bottom: 2px solid #c7c97f;
 }
