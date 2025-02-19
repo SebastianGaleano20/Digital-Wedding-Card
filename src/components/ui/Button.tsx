@@ -1,32 +1,11 @@
-'use client'
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import styles from "../../styles/Button.module.css";
-import Image from "next/image";
+import animation from '@/src/styles/Animation.module.css'
 
-interface ButtonProps {
-    href?: string;
+interface ButtonProp {
+    text: string;
 }
 
-export function Button({ href }: ButtonProps) {
-    const [isExpand, setIsExpand] = useState(false);
-    const router = useRouter();
-
-    const handleClick = () => {
-        setIsExpand(true);
-
-        // Esperar a que la animación termine antes de redirigir
-        setTimeout(() => {
-            setIsExpand(false);
-            if (href) {
-                router.push(href); // Redirecciona después de 800 ms
-            }
-        }, 600); // Duración de la animación
-    };
-
+export const ButtonMap = ({ text }: ButtonProp) => {
     return (
-        <button className={`${isExpand ? styles.expand : ""}`} onClick={handleClick}>
-            <Image src="/logo.png" width={130} height={130} alt="logo" />
-        </button>
-    );
+        <button type="button" className={`${animation.title} text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2`}>{text}</button>
+    )
 }

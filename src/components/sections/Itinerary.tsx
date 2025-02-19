@@ -1,6 +1,6 @@
 import animation from '@/src/styles/Animation.module.css'
 import Image from 'next/image'
-import { ButtonMap } from '../ui/ButtonMap'
+import { ButtonMap } from '../ui/Button'
 
 export default function Itinerary() {
     return (

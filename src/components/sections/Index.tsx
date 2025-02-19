@@ -1,4 +1,4 @@
-import { Button } from "../ui/Button"
+import { Button } from "../ui/ButtonIndex"
 import animation from '@/src/styles/Animation.module.css'
 
 export default function Index() {
