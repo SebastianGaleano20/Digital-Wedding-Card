@@ -11,7 +11,7 @@ export default function AboutUs() {
                 <section className="absolute inset-0 bg-gray-600 bg-opacity-50"></section>
                 <h2 className={`${animation.title} text-white font-bolt text-3xl`}>Nos casamos</h2>
                 <p className={`${animation.scaleUp} block elegant p-2 font-bold text-white text-center text-5xl z-10`}>Luciana <br />y<br /> Sebastian</p>
-                <h2 className={`${animation.title} text-white font-bolt text-3xl`}>20 DICIEMBRE 2025</h2>
+                {/* <h2 className={`${animation.title} text-white font-bolt text-3xl`}>20 DICIEMBRE 2025</h2> */}
             </section>
             <h2 className="font-bold text-3xl text-center elegant m-4 text-gray-800">Te invitamos a celebrar con nosotros</h2>
         </section>

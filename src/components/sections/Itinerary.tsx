@@ -21,8 +21,8 @@ export default function Itinerary() {
                 <h4 className={`${animation.title} p-gray text-xl`}>Lugar</h4>
                 <Image className={`${animation.title}`} src="/church.png" width={55} height={55} alt="church" />
                 <p className={`${animation.title} elegant text-4xl p-gray`}>Santuario de San Expedito</p>
-                <p className={`${animation.title} font-medium text-sm text-slate-950`}>Bartolome Mitre 2411, Balvanera Buenos Aires</p>
-                <ButtonMap text='CLICK UBICACION' />
+                <p className={`${animation.title} font-medium text-sm text-gray-800`}>Bartolome Mitre 2411, Balvanera Buenos Aires</p>
+                <ButtonMap text='CLICK UBICACION' url='https://maps.app.goo.gl/VsDdiuk9moUKYiie9' />
             </section>
             {/* <section>
                 <h2 className={`${animation.title} title2xl`}>Fiesta</h2>
