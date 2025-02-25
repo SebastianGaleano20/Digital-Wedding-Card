@@ -1,6 +1,6 @@
 import animation from '@/src/styles/Animation.module.css'
 import Image from 'next/image'
-import { ButtonMap } from '../ui/Button'
+import { Button } from '../ui/Button'
 
 export default function Itinerary() {
     return (
@@ -22,7 +22,7 @@ export default function Itinerary() {
                 <Image className={`${animation.title}`} src="/church.png" width={55} height={55} alt="church" />
                 <p className={`${animation.title} elegant text-4xl p-gray`}>Santuario de San Expedito</p>
                 <p className={`${animation.title} font-medium text-sm text-gray-800`}>Bartolome Mitre 2411, Balvanera Buenos Aires</p>
-                <ButtonMap text='CLICK UBICACION' url='https://maps.app.goo.gl/VsDdiuk9moUKYiie9' />
+                <Button text='CLICK UBICACION' url='https://maps.app.goo.gl/VsDdiuk9moUKYiie9' />
             </section>
             {/* <section>
                 <h2 className={`${animation.title} title2xl`}>Fiesta</h2>

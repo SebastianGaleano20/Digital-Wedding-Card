@@ -2,10 +2,10 @@ import animation from '@/src/styles/Animation.module.css'
 
 interface ButtonProp {
     text: string;
-    url: string;
+    url?: string;
 }
 
-export const ButtonMap = ({ text, url }: ButtonProp) => {
+export const Button = ({ text, url }: ButtonProp) => {
     return (
         <button
             type="button"
