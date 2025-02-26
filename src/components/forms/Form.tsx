@@ -3,6 +3,7 @@ import Input from "../ui/Input";
 import { Button } from "../ui/Button";
 
 export default function Form() {
+
     return (
         <form action="" className="max-w-sm mx-auto p-4 bg-white rounded-lg shadow  border-2  border-gray-200">
             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
