@@ -1,8 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import type { FirebaseOptions } from "firebase/app";
 
-const firebaseConfig = {
+const firebaseConfig: FirebaseOptions = {
   apiKey: "AIzaSyBsWRkZplV4O3d0elFjwSKkqvGFoaHk6Jc",
   authDomain: "card-lys.firebaseapp.com",
   databaseURL: "https://card-lys-default-rtdb.firebaseio.com",
@@ -14,5 +14,5 @@ const firebaseConfig = {
 };
 
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);;
+export const db = getFirestore(app);
