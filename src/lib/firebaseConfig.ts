@@ -1,16 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import type { FirebaseOptions } from "firebase/app";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 const firebaseConfig: FirebaseOptions = {
-  apiKey: "AIzaSyBsWRkZplV4O3d0elFjwSKkqvGFoaHk6Jc",
-  authDomain: "card-lys.firebaseapp.com",
-  databaseURL: "https://card-lys-default-rtdb.firebaseio.com",
-  projectId: "card-lys",
-  storageBucket: "card-lys.firebasestorage.app",
-  messagingSenderId: "1016438040035",
-  appId: "1:1016438040035:web:3e98befa19225c81feecd6",
-  measurementId: "G-R22JD7GRED"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
