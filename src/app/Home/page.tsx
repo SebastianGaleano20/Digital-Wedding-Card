@@ -1,5 +1,6 @@
 import AboutUs from "@/src/components/sections/AboutUs";
 import FormSection from "@/src/components/sections/FormSection";
+import InfoSection from "@/src/components/sections/InfoSection";
 // import Gallery from "@/src/components/sections/Gallery";
 import Itinerary from "@/src/components/sections/Itinerary";
 import TextSection from "@/src/components/sections/TextSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <Itinerary />
         {/* <Gallery /> */}
         <FormSection />
+        <InfoSection />
       </section>
     </section>
   );
