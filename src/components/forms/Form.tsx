@@ -25,13 +25,13 @@ export default function Form() {
     return (
         <form  action="" className="max-w-sm mx-auto mt-2 p-4 bg-white rounded-lg shadow  border-2  border-gray-200">
             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
-                Nombre completo:<Input type="text" name="name" value={data.name} onChange={handleChange} placeholder="Nombre completo" />
+                Nombre completo:<Input id="name" type="text" name="name" value={data.name} onChange={handleChange} placeholder="Nombre completo" />
             </label>
             <label htmlFor="allergy" className="block mb-2 text-sm font-medium text-gray-900">
-                Aclaración:<Input type="text" name="allergy" value={data.allergy} onChange={handleChange} placeholder="Alergías o intolerancias alimentarias" />
+                Aclaración:<Input id="allergy" type="text" name="allergy" value={data.allergy} onChange={handleChange} placeholder="Alergías o intolerancias alimentarias" />
             </label>
             <label htmlFor="song" className="block mb-2 text-sm font-medium text-gray-900">
-                Canción:<Input type="text" name="song" value={data.song} onChange={handleChange} placeholder="Nombre completo" />
+                Canción:<Input id="song" type="text" name="song" value={data.song} onChange={handleChange} placeholder="Nombre completo" />
             </label>
             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">
                 Mensaje:
