@@ -1,11 +1,12 @@
-import '../styles/globals.css';
-import type { Metadata } from 'next';
-import { mea_culpa, outfit } from '../fonts/fonts';
-import type React from "react"
+import "../styles/globals.css";
+import type { Metadata } from "next";
+import { mea_culpa, outfit } from "../fonts/fonts";
+import type React from "react";
 
 export const metadata: Metadata = {
-  title: 'Boda Lu y Sebas',
-  description: 'Tarjeta de invitación digital - Casamiento de Luciana y Sebastian',
+  title: "Boda Lu y Sebas",
+  description:
+    "Tarjeta de invitación digital - Casamiento de Luciana y Sebastian",
 };
 
 export default function RootLayout({
@@ -14,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className={`${outfit.variable} ${mea_culpa.variable}`}>{children}</body>
+    <html lang="en">
+      <body className={`${outfit.variable} ${mea_culpa.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
