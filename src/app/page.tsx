@@ -1,4 +1,4 @@
-import Index from "./components/sections/Index";
+import Index from "../components/ui/sections/Index";
 
 export default function Page() {
   return (
