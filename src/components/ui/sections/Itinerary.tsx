@@ -28,11 +28,11 @@ export default function Itinerary() {
             </section>
           </section>
           <Image
-            src="/civil.jpg"
+            src="/lys.jpg"
             alt="civil"
-            width={70}
-            height={70}
-            className={`${animation.title}`}
+            width={400}
+            height={100}
+            className={`${animation.title} rounded-lg`}
           />
           <p className={`${animation.title} elegant text-4xl p-gray`}>
             Registro civil - V. Dominico
