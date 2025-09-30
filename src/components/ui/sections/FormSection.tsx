@@ -1,10 +1,12 @@
-import Form from "../forms/Form";
+import Form from "../../forms/Form";
 
 export default function FormSection() {
-    return (
-        <section className="bg-gradient-to-b from-blue-300 to-transparent">
-            <h3 className="text-4xl font-semibold text-center elegant">Confirmacion de asistencia</h3>
-            <Form />
-        </section>
-    )
+  return (
+    <section className="bg-gradient-to-b from-blue-300 to-transparent">
+      <h3 className="text-4xl font-semibold text-center elegant">
+        Confirmacion de asistencia
+      </h3>
+      <Form />
+    </section>
+  );
 }
