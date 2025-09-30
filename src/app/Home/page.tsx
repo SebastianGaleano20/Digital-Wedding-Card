@@ -14,7 +14,6 @@ export default function Home() {
         <Chronometer />
         <TextSection />
         <Itinerary />
-        {/* <Gallery /> */}
         <InfoSection />
       </section>
     </section>
