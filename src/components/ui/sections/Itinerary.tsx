@@ -4,7 +4,7 @@ import { Button } from "../Button";
 
 export default function Itinerary() {
   return (
-    <section className="bg-gradient-to-b from-transparent to-blue-300">
+    <section>
       <section className="flex flex-col justify-center items-center gap-3">
         <Image
           className={`${animation.title}`}
@@ -76,18 +76,15 @@ export default function Itinerary() {
           url="https://maps.app.goo.gl/Mg2fUvtfVj8zWGov5"
         />
       </section>
-      {/* <section>
-                <h2 className={`${animation.title} title2xl`}>Fiesta</h2>
-                <h4 className={`${animation.title} title2xl`}>Día</h4>
-                <p className={`${animation.title} titleXl`}>20 Diciembre 2025 - 20hs</p>
-                {/* Boton para agendar */}
-      {/* <h4 className={`${animation.title} title2xl`}>Lugar</h4> */}
-      {/* <p className={`${animation.title} titleXl`}>Salón de fiestas</p> */}
-      {/* Boton hacia formulario de confirmación */}
-      {/* <h4 className={`${animation.title} title2xl`}>Dirección</h4> */}
-      {/* <p className={`${animation.title} titleXl`}>Calle falsa 123</p> */}
-      {/* Boton como llegar */}
-      {/* </section> */}
+      <section>
+        <Image
+          src="/itinerary.png"
+          alt="itinerary"
+          width={600}
+          height={600}
+          className={`${animation.title}`}
+        />
+      </section>
     </section>
   );
 }
