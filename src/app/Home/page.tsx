@@ -8,14 +8,7 @@ import TextSection from "@/src/components/ui/sections/TextSection";
 
 export default function Home() {
   return (
-    <section
-      className="m-h-screen bg-white"
-      style={{
-        backgroundImage: "url(/font.png)",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <section className="m-h-screen bg-white">
       <section>
         <AboutUs />
         <Chronometer />
