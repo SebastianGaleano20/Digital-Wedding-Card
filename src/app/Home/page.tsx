@@ -4,6 +4,7 @@ import AboutUs from "@/src/components/ui/sections/AboutUs";
 // import Gallery from "@/src/components/sections/Gallery";
 import Itinerary from "@/src/components/ui/sections/Itinerary";
 import TextSection from "@/src/components/ui/sections/TextSection";
+import FormSection from "@/src/components/ui/sections/FormSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Chronometer />
         <TextSection />
         <Itinerary />
+        <FormSection />
       </section>
     </section>
   );
