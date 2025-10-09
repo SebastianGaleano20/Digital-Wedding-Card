@@ -8,7 +8,7 @@ export default function Itinerary() {
       <section className="flex flex-col justify-center items-center gap-3">
         <Image
           className={`${animation.title}`}
-          src="/ring.png"
+          src="/assets/ring.png"
           width={60}
           height={60}
           alt="ring"
@@ -28,7 +28,7 @@ export default function Itinerary() {
             </section>
           </section>
           <Image
-            src="/lys.jpg"
+            src="/pics/21.jpg"
             alt="civil"
             width={400}
             height={100}
@@ -60,7 +60,7 @@ export default function Itinerary() {
         </section>
         <Image
           className={`${animation.title} rounded-lg`}
-          src="/parroquia.jpg"
+          src="/assets/parroquia.jpg"
           width={400}
           height={100}
           alt="church"
