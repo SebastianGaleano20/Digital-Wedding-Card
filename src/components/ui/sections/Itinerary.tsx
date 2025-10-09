@@ -78,7 +78,7 @@ export default function Itinerary() {
       </section>
       <section>
         <Image
-          src="/itinerary.png"
+          src="/assets/itinerary.png"
           alt="itinerary"
           width={600}
           height={600}
